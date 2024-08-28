@@ -1,35 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saylani Welfare Quiz</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <title>Saylani Mass IT Training Centre Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container my-5">
-    <div class="card">
-      <div class="card-header text-center">
-        <h2>Saylani Welfare Quiz</h2>
-      </div>
-      <div class="card-body">
-        <div id="quiz-container">
-          <!-- Questions will be dynamically inserted here -->
-        </div>
-        <button id="next-btn" class="btn btn-primary mt-3">Next</button>
-        <button id="submit-btn" class="btn btn-success mt-3 d-none">Submit</button>
+  <div class="quiz-container">
+    <img src="logo.png" alt="logo of SMIT" width="150px" height="90px">
+    <!-- Quiz Question 1 -->
+    <div class="question mt-4">
+      <p>1. What does HTML stand for?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question1" value="A"> Hyper Text Markup Language
+        </label>
+        <label>
+          <input type="radio" name="question1" value="B"> Home Tool Markup Language
+        </label>
+        <label>
+          <input type="radio" name="question1" value="C"> Hyperlinks and Text Markup Language
+        </label>
       </div>
     </div>
-    <div id="result-container" class="mt-3 d-none">
-      <h4>Your Score: <span id="score"></span></h4>
-      <button id="restart-btn" class="btn btn-secondary">Restart Quiz</button>
+
+    <!-- Quiz Question 2 -->
+    <div class="question">
+      <p>2. What is Bootstrap mainly used for?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question2" value="A"> Server-side scripting
+        </label>
+        <label>
+          <input type="radio" name="question2" value="B"> Creating responsive websites
+        </label>
+        <label>
+          <input type="radio" name="question2" value="C"> Database management
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 3 -->
+    <div class="question">
+      <p>3. What does CSS stand for?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question3" value="A"> Computer Style Sheets
+        </label>
+        <label>
+          <input type="radio" name="question3" value="B"> Cascading Style Sheets
+        </label>
+        <label>
+          <input type="radio" name="question3" value="C"> Creative Style Sheets
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 4 -->
+    <div class="question">
+      <p>4. Which HTML tag is used to define an internal style sheet?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question4" value="A"> &lt;style&gt;
+        </label>
+        <label>
+          <input type="radio" name="question4" value="B"> &lt;css&gt;
+        </label>
+        <label>
+          <input type="radio" name="question4" value="C"> &lt;script&gt;
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 5 -->
+    <div class="question">
+      <p>5. Which property is used to change the background color in CSS?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question5" value="A"> color
+        </label>
+        <label>
+          <input type="radio" name="question5" value="B"> bgcolor
+        </label>
+        <label>
+          <input type="radio" name="question5" value="C"> background-color
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 6 -->
+    <div class="question">
+      <p>6. What is the correct syntax for referring to an external script called "script.js"?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question6" value="A"> &lt;script src="script.js"&gt;
+        </label>
+        <label>
+          <input type="radio" name="question6" value="B"> &lt;script href="script.js"&gt;
+        </label>
+        <label>
+          <input type="radio" name="question6" value="C"> &lt;script link="script.js"&gt;
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 7 -->
+    <div class="question">
+      <p>7. How can you add a comment in a JavaScript file?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question7" value="A"> <!-- This is a comment -->
+        </label>
+        <label>
+          <input type="radio" name="question7" value="B"> // This is a comment
+        </label>
+        <label>
+          <input type="radio" name="question7" value="C"> ' This is a comment
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 8 -->
+    <div class="question">
+      <p>8. Which CSS property controls the text size?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question8" value="A"> font-style
+        </label>
+        <label>
+          <input type="radio" name="question8" value="B"> text-size
+        </label>
+        <label>
+          <input type="radio" name="question8" value="C"> font-size
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 9 -->
+    <div class="question">
+      <p>9. How do you create a function in JavaScript?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question9" value="A"> function:myFunction()
+        </label>
+        <label>
+          <input type="radio" name="question9" value="B"> function myFunction()
+        </label>
+        <label>
+          <input type="radio" name="question9" value="C"> function = myFunction()
+        </label>
+      </div>
+    </div>
+
+    <!-- Quiz Question 10 -->
+    <div class="question">
+      <p>10. Which of the following is the correct way to link an external stylesheet in HTML?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="question10" value="A"> &lt;link rel="stylesheet" type="text/css"
+          href="style.css"&gt;
+        </label>
+        <label>
+          <input type="radio" name="question10" value="B"> &lt;style src="style.css"&gt;
+        </label>
+        <label>
+          <input type="radio" name="question10" value="C"> &lt;stylesheet&gt;style.css&lt;/stylesheet&gt;
+        </label>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button class="btn btn-custom mt-4" onclick="submitQuiz()">Submit</button>
     </div>
   </div>
 
-  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function submitQuiz() {
+      alert('Your quiz has been submitted! Thank you for participating.');
+    }
+  </script>
 </body>
-</html>
 
-</body>
 </html>
